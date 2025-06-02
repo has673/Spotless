@@ -1,10 +1,6 @@
 import Image from "next/link";
 import React, { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
-//Import Images
-import testi from "../../assets/images/digital/testi.png";
-
-//Import Client Images
 
 class Testimonial extends Component {
   constructor(props) {
@@ -68,7 +64,9 @@ class Testimonial extends Component {
       <React.Fragment>
         <section
           className="section bg-light"
-          style={{ background: `url(${testi}) center center` }}
+          style={{
+            background: `url(${"/assets/images/digital/testi.png"}) center center`,
+          }}
         >
           <Container>
             <Row className="justify-content-center">
