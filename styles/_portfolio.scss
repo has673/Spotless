@@ -1,0 +1,209 @@
+
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.single-portfolio {
+    border-radius: 8px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-1:hover img {
+    transform: scale(1.1) rotate(3deg);
+    opacity: 0.65;
+}
+.overlay-work {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+}
+.overlay-work:hover {
+    opacity: 0.50;
+}
+
+element.style {
+}
+.single-portfolio:hover > .content-1 {
+    bottom: 5%;
+}
+.content-1 {
+    position: absolute;
+    left: 5%;
+}
+.content-1 > .title {
+    font-size: 18px;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-light {
+    color: #f8f9fc !important;
+}
+.client-1 {
+    position: absolute;
+    right: 5%;
+}
+.content-1 > a {
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Nunito';
+}
+.content-1 > a:hover {
+    color: white;
+}
+.text-white {
+    color: #fff !important;
+}
+a:hover {
+    cursor: pointer;
+}
+.masonry-grid {
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    --bs-gutter-x: 15px;
+}
+.img-fluid {
+    transition: all 0.5s ease;
+}
+
+.messonry-button button {
+    padding: 0;
+    border: 0 none;
+    position: relative;
+    background-color: transparent;
+    font-family: "Rubik", sans-serif;
+    padding: 0px 10px;
+}
+
+.messonry-button button::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background: #2a9df4;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.messonry-button button:hover span.filter-text {
+    color: #2a9df4;
+}
+
+.messonry-button button span.filter-text {
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 16px;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.messonry-button button:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+.title-detail {
+    display: block;
+    width: 100%;
+    margin: 150px 0px 0px 0px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+.list {
+    display: block;
+    width: 100%;
+    margin: 10px 0px 0px;
+    text-align: center;
+    padding: 0px;
+    font-weight: 600;
+}
+
+.text-dark {
+    font-weight: 600;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.features-list {
+    border-color: #ffffff;
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    padding: 20px 15px 20px 15px;
+    margin: 10px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.list-item {
+    display: inline-block;
+}
+
+.fea.icon-sm {
+    margin-right: 5px;
+}
+
+.text-success {
+    color: #2eca8b !important;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group .icons {
+    position: absolute;
+    top: 13px;
+    left: 18px;
+}
+
+.form-group .form-control {
+    box-shadow: none;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    color: #3c4858;
+    height: 42px;
+    font-size: 13px;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    
+}
+
+.pl-5 {
+    padding-left: 3rem !important;
+}
+
+textarea {
+    resize: vertical;
+    display: flex;
+    padding-top: 10px !important;
+}
+
+.submitBnt {
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .text-lg-right {
+        text-align: right !important;
+    }
+}

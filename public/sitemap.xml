@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://softthrive.com/</loc> </url>
+<url> <loc>https://softthrive.com/contact</loc> </url>
+<url> <loc>https://softthrive.com/web-development</loc> </url>
+<url> <loc>https://softthrive.com/web-design</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/burrito-bar</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/iammusic</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/cafe-gitana</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/trustbar</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/paykaart</loc> </url>
+<url> <loc>https://softthrive.com/portfolio/nursify</loc> </url>
+</urlset>

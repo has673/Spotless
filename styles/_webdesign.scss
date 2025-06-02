@@ -1,0 +1,39 @@
+.alert.alert-pills {
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.alert.alert-light {
+    background-color: #f8f9fc;
+    border-color: #dee2e6;
+    color: #3c4858;
+}
+
+.alert {
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.alert-light {
+    background-color: rgba(248,249,252,.9);
+    border-color: #f8f9fc;
+    color: #fff;
+}
+
+.alert-light {
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+    color: #818182;
+}
+
+.alert {
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    padding: 0.75rem 1.25rem;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+

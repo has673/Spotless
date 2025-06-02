@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "homeImage": "portfolio/portfolio-1.jpg",
+        "image": "portfolio/project-1.jpg",
+        "title": "Burrito Bar: Food Ordering App",
+        "date": "28 Aug 2020",
+        "client": "Ben Perlmutter",
+        "categories": ["App", "Food"],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "Food Ordering App for a restaurant located in San Francisco, California, United States. It let's you connect to the local server, see all the menu, select the food you want, with extras and option to remove ingredients. Users can pay through the online payment system integerated, i.e PayPal, Square, Stripe etc.",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/work-1/burrito.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "images/project/portfolio-2.jpg",
+            "imageTwo": "images/project/portfolio-3.jpg",
+            "imageThree": "portfolio/work-1/portfolio-1.jpg"
+        },
+        "features": ["Admin Panel", "Professional and Attractive Design", "Carefully drawn Wireframe", "Flexible Menu", "Online Payment", "Free Live Demo"]
+    },
+    {
+        "id": 2,
+        "homeImage": "portfolio/portfolio-2.jpg",
+        "image": "images/project/project-2.jpg",
+        "title": "IamMusic: Music Teaching App",
+        "date": "28 Sep 2020",
+        "client": "Music Company",
+        "categories": ["Music","App"],
+        "awards": ["2015 Digital World Awards 2016 Finale Awards"],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "Online Music Learning Portal. Teachers and Students can sign up and teach/learn via video conferencing. Teachers can list their courses and students can select their preferred course to start.",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/work-2/landing.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "portfolio/work-2/login.jpg",
+            "imageTwo": "portfolio/work-2/signup.jpg",
+            "imageThree": "portfolio/portfolio-2.jpg"
+        },
+        "features": ["Admin Panel","Student Panel", "Teacher panel", "Professional and Attractive Design", "Carefully drawn Wireframe","Free Live Demo"]
+    },
+    {
+        "id": 3,
+        "homeImage": "portfolio/portfolio-3.jpg",
+        "image": "images/project/project-3.jpg",
+        "title": "Cafe Gitana: Restraunt Website",
+        "date": "18 Aug 2021",
+        "client": "Victor",
+        "categories": ["Website", "Food"],
+        "awards": ["2015 Digital World Awards 2016 Finale Awards"],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "Restaurant Website for Cafe Gitana located in Montreal, QC, Canada. Website features a very modern and attractive design with all the menu displayed. Users can also order through the website and checkout using online payment methods..",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/cafe-gitana/landing.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "portfolio/cafe-gitana/1.jpg",
+            "imageTwo": "portfolio/cafe-gitana/2.jpg",
+            "imageThree":  "portfolio/portfolio-3.jpg"
+        },
+        "features": ["Admin Panel", "Professional and Attractive Design", "Flexible Menu", "Cart", "Online Payment", "Free Live Demo"]
+    },
+    {
+        "id": 4,
+        "homeImage": "portfolio/playkaart/main.jpg",
+        "image": "portfolio/project-1.jpg",
+        "title": "Paykaart: Pay Your Way",
+        "date": "1 Dec 2020",
+        "client": "Dharma Co.",
+        "categories": ["App" ],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "Website for an Online Payment App, let's you see all the features of the app and explore the functionality. Animations on the website makes it very unique and attractive",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/playkaart/landing.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "portfolio/playkaart/1.jpg",
+            "imageTwo": "portfolio/playkaart/2.jpg",
+            "imageThree": "portfolio/playkaart/main.jpg"
+        },
+        "features": ["Animations", "Professional and Attractive Design", "Free Live Demo"]
+    },
+    {
+        "id": 5,
+        "homeImage": "portfolio/essay/main.jpg",
+        "image": "portfolio/project-1.jpg",
+        "title": "Nursify: Academic Paper Writing Service",
+        "date": "21 July 2021",
+        "client": "Nursify.org",
+        "categories": ["App", "Academic", "Website"],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "Nursify is a reputable online writing service provider Globally.We have always prioritized the aspect of working towards customer satisfaction and this is by giving them the good grades they are looking for. Nursing Class Essays has a team of tried and tested writers who have specialized in the different services that we offer. We at Nursing Class Essays have provided a conducive environment for our writers so that they can maximize their productivity and deliver that assignment no matter its deadline.",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/essay/landing.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "portfolio/essay/1.jpg",
+            "imageTwo": "portfolio/essay/2.jpg",
+            "imageThree": "portfolio/essay/main.jpg"
+        },
+        "features": ["Admin Panel", "Professional and Attractive Design", "User Dashbaord", "Online Academic Paper", "Online payments", "Free Live Demo"]
+    },
+    {
+        "id": 6,
+        "homeImage": "portfolio/trust-bar/main.jpg",
+        "image": "portfolio/project-1.jpg",
+        "title": "TrustBar: Crypto Wallet",
+        "date": "15 June 2021",
+        "client": "Mark Smith",
+        "categories": ["Crypto", "App"],
+        "excerpt": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies.",
+        "body": "TrustBar is a digital wallet for Crypto currencies which provides user to store, pay and recieve cryptocurrencies with a simple scan of a barcode or input of wallet address.",
+        "btn": {
+            "text": "Go to link",
+            "link": "/"
+        },
+        "largeImage": "portfolio/trust-bar/landing.jpg",
+        "subContent": {
+            "title": "Digital Marketing.",
+            "text": "Marketing has always been about connecting with your audience in the right place and at the right time. Today, that means you need to meet them where they are already spending time: on the internet. A seasoned inbound marketer might say inbound marketing and digital marketing are virtually the same thing, but there are some minor differences. And conversations with marketers and business owners in the U.S., U.K., Asia, Australia, and New Zealand, I've learned a lot about how those small differences are being observed across the world."
+        },
+        "gallery": {
+            "imageOne": "portfolio/trust-bar/1.jpg",
+            "imageTwo": "portfolio/trust-bar/2.jpg",
+            "imageThree": "portfolio/trust-bar/main.jpg"
+        },
+        "features": ["Admin Panel", "Cryptocurrency", "Dashbaord", "Intelligent Scanning", "Online payments", "Free Live Demo"]
+    }
+    
+]
+
+

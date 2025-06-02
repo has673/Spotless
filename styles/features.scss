@@ -1,0 +1,64 @@
+.service-box {
+    margin: 25px 0px;
+    border-color: #ffffff;
+    box-shadow: 0 0 40px rgb(51 51 51 / 10%);
+    padding: 50px 15px;
+    height: 300px;
+    border-radius: 20px;
+}
+.title-2 {
+  color: #161c2d;
+  font-weight: 600;
+}
+.link-text {
+    display: inline-block;
+}
+
+.design-logos{ 
+    width: 80px;
+    max-height: 80px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
+
+  .design-logos:hover { 
+    cursor: pointer;
+    width: 85px;
+    max-height: 85px;
+    filter: grayscale(0%);
+    opacity: 0.9;
+  }
+
+  .responsive-container {
+    background-color: #fafafa;
+  }
+  .image::before {
+      background: rgba(42, 157, 244, 0.1);
+      animation: spinner-border 5s linear infinite !important;
+  }
+
+  .image:before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: -3px;
+    width: 64px;
+    height: 64px;
+    border-radius: 6px;
+    transform: rotate(33.75deg);
+    background: linear-gradient(45deg, transparent, rgba(42, 157, 244, 0.1));
+  }
+  .uil-edit-alt:before {
+    content: '\e9a7';
+    font-family: unicons;
+    font-style: normal;
+    font-weight: 400;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+  }
