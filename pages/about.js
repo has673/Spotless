@@ -1,30 +1,15 @@
-import React, { Component } from "react";
-import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import { Col, Container, Row } from "reactstrap";
+import React, { Component } from "react";
 import CountUp from "react-countup";
+import { Col, Container, Row } from "reactstrap";
 
 import SectionTitle from "../components/about/SectionTitle";
 import TeamBox from "../components/about/TeamBox";
 
 //Import Images
-import logolight from "../assets/images/logo-light.png";
-import logodark from "../assets/images/logo-dark.png";
-import aboutus from "../assets/images/company/aboutus.jpg";
-import about2 from "../assets/images/company/about2.png";
-import amazon from "../assets/images/client/amazon.svg";
-import google from "../assets/images/client/google.svg";
-import lenovo from "../assets/images/client/lenovo.svg";
-import paypal from "../assets/images/client/paypal.svg";
-import shopify from "../assets/images/client/shopify.svg";
-import spotify from "../assets/images/client/spotify.svg";
+
 import WorkProcess from "../components/about/WorkProcess";
-//Team Images
-import team1 from "../assets/images/client/cheifmarketing.jpeg";
-import team2 from "../assets/images/client/waleed.png";
-import team3 from "../assets/images/client/shahrukh.png";
-import team4 from "../assets/images/client/muhammad.png";
 
 export default class PageAboutusTwo extends Component {
   constructor(props) {
@@ -146,7 +131,7 @@ export default class PageAboutusTwo extends Component {
       candidates: [
         {
           id: 1,
-          image: team1,
+          image: "/assets/images/client/cheifmarketing.jpeg",
           name: "Philipp Tschochohei",
           designation: "Chief Marketing Officer",
           link: "",
@@ -175,8 +160,7 @@ export default class PageAboutusTwo extends Component {
   componentDidMount() {
     document.body.classList = "";
     document.getElementById("top-menu").classList.add("nav-light");
-    // document.getElementById("buyButton").className = "btn btn-light";
-    document.getElementById("brandLogo").src = logolight;
+    document.getElementById("brandLogo").src = "/assets/images/logo-light.png"; // ✅ Correct path
     window.addEventListener("scroll", this.scrollNavigation, true);
   }
 
@@ -186,18 +170,19 @@ export default class PageAboutusTwo extends Component {
   }
 
   scrollNavigation = () => {
-    var doc = document.documentElement;
-    var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    const doc = document.documentElement;
+    const top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
+    const brandLogo = document.getElementById("brandLogo");
+
     if (top > 80) {
       document.getElementById("topnav").classList.add("nav-sticky");
-      //   document.getElementById("buyButton").className = "btn btn-primary";
-      document.getElementById("brandLogo").src = logodark;
+      brandLogo.src = "/assets/images/logo-dark.png"; // ✅ from public folder
     } else {
       document.getElementById("topnav").classList.remove("nav-sticky");
-      //   document.getElementById("buyButton").className = "btn btn-light";
-      document.getElementById("brandLogo").src = logolight;
+      brandLogo.src = "/assets/images/logo-light.png";
     }
   };
+
   render() {
     return (
       <React.Fragment>
@@ -257,7 +242,7 @@ export default class PageAboutusTwo extends Component {
             <Row className="align-items-center" id="counter">
               <Col md={6}>
                 <Image
-                  src={about2}
+                  src="/assets/images/company/about2.png"
                   className="img-fluid"
                   alt="About"
                   layout="intrinsic"

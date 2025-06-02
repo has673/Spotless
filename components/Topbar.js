@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container } from "reactstrap";
-//Import images
-import logodark from "../assets/images/logo-dark.png";
-import logo from "../assets/images/newlogo.png";
 
 class Topbar extends Component {
   constructor(props) {
@@ -125,7 +122,7 @@ class Topbar extends Component {
             <div className="align-self-center">
               <Link className="logo" href="/">
                 <Image
-                  src={logo}
+                  src="/assets/images/newlogo.png"
                   id="brandLogo"
                   layout="intrinsic"
                   width={140}

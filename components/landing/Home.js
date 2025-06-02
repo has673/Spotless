@@ -1,30 +1,19 @@
 //next
-import Image from "next/image";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 // React basic and bootstrap
-import React, { Component } from "react";
+import { Component } from "react";
 import Typist from "react-typist";
 
 // Import  Images
-import rocket from "../../assets/images/home/rocket.svg";
-import { Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 
 //Import Images
-import bootstrap2 from "../../assets/images/hero/bootstrap2.png";
-import scss2 from "../../assets/images/hero/scss2.png";
-import html2 from "../../assets/images/hero/html2.png";
-import css2 from "../../assets/images/hero/css2.png";
-import w3c2 from "../../assets/images/hero/w3c2.png";
-import ui2 from "../../assets/images/hero/ui2.png";
-import logo_dark from "../../assets/images/logo-dark.png";
 import logo from "../../assets/images/newlogo.png";
 
 import bg_slider_1 from "../../assets/newimages/bg-slider-1.png";
 import bg_slider_2 from "../../assets/newimages/bg-slider-2.png";
 import bg_slider_3 from "../../assets/newimages/bg-slider-3.png";
-import bg_slider_4 from "../../assets/newimages/bg-slider-4.png";
-import bg_slider_5 from "../../assets/newimages/bg-slider-5.png";
-import bg_slider_6 from "../../assets/newimages/bg-slider-6.png";
 
 import * as $ from "jquery";
 
@@ -78,7 +67,7 @@ class Home extends Component {
                   <Col lg={6} md={6}>
                     <div className="title-heading">
                       <Image
-                        src={logo}
+                        src="/assets/images/newlogo.png"
                         alt="section_logo"
                         width={300}
                         height={200}
@@ -150,7 +139,7 @@ class Home extends Component {
             <div className="layers-dv position-relative">
               <div className="layer_1">
                 <Image
-                  src={bg_slider_1}
+                  src="/assets/newimages/bg-slider-1.png"
                   alt="Slider_img1"
                   className="slider-bg1"
                   layout="intrinsic"
@@ -161,7 +150,7 @@ class Home extends Component {
               </div>
               <div className="layer_2">
                 <Image
-                  src={bg_slider_2}
+                  src="/assets/newimages/bg-slider-1.png"
                   alt="Slider_img2"
                   className="slider-bg2"
                   layout="intrinsic"
@@ -171,7 +160,7 @@ class Home extends Component {
               </div>
               <div className="layer_3">
                 <Image
-                  src={bg_slider_3}
+                  src="/assets/newimages/bg-slider-1.png"
                   alt="Slide_img3"
                   className="slider-bg3"
                   layout="intrinsic"

@@ -7,9 +7,6 @@ import { Container, Row, Col } from "reactstrap";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-// import images
-import img404 from "../assets/images/404.png";
-
 class PageError extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +32,7 @@ class PageError extends Component {
                   layout="intrinsic"
                   width={420}
                   height={204}
-                  src={img404}
+                  src="/assets/images/404.png"
                   className="img-fluid"
                   alt="Error 404"
                 />

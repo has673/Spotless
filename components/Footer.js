@@ -8,13 +8,6 @@ import { Container, Row, Col, Form, Input, Label } from "reactstrap";
 import FeatherIcon from "feather-icons-react";
 
 //images
-import americanEx from "../assets/images/payments/american-ex.png";
-import discover from "../assets/images/payments/discover.png";
-import masterCard from "../assets/images/payments/master-card.png";
-import paypal from "../assets/images/payments/paypal.png";
-import visa from "../assets/images/payments/visa.png";
-import logolight from "../assets/images/logo-light.png";
-import logo from "../assets/images/newlogo.png";
 
 const Footer = () => {
   return (
@@ -23,7 +16,12 @@ const Footer = () => {
         <Row>
           <Col lg="4" xs="12" className="mb-1" name="footercolumn">
             <Link href="#" className="logo-footer">
-              <Image width={180} height={100} src={logo} alt="logo" />
+              <Image
+                width={180}
+                height={100}
+                src="/assets/images/newlogo.png"
+                alt="logo"
+              />
             </Link>
             <p className="mt-2">We make IT happen</p>
             <ul className="list-unstyled social-icon social mb-0 mt-2">

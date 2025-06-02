@@ -1,30 +1,26 @@
 // React Basic and Bootstrap
+import FeatherIcon from "feather-icons-react";
+import Image from "next/image";
 import React, { Component } from "react";
-import Image from "next/image"
 import {
-  Container,
-  Row,
-  Col,
   Alert,
-  Form,
-  FormGroup,
-  Input,
-  Button,
-  Label,
   Card,
   CardBody,
+  Col,
+  Container,
+  Form,
+  Input,
+  Label,
+  Row,
 } from "reactstrap";
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
 
 //Import Components
+import { postService } from "../services";
 import SectionTitle from "./SectionTitle";
 import SectionTitleLeft from "./SectionTitleLeft";
-import { postService } from "../services";
 
 // Import Images
 import Process from "../../assets/newimages/1.png";
-import mobileNotificationSVG from "../../assets/images/illustrator/Mobile_notification_SVG.svg";
 
 class HowItWorks extends Component {
   constructor(props) {
@@ -47,12 +43,12 @@ class HowItWorks extends Component {
         { title: "Reasonable Cost" },
       ],
       Contactvisible: false,
-      message:{
-        name:"",
-        email:"",
-        subject:"",
-        mess:""
-      }
+      message: {
+        name: "",
+        email: "",
+        subject: "",
+        mess: "",
+      },
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.emailValidation = this.emailValidation.bind(this);
@@ -62,61 +58,75 @@ class HowItWorks extends Component {
     // event.preventDefault();
     // this.setState({ Contactvisible: true });
   }
-  emailValidation(){
-    const regex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{3,})$/i;
-    if(!this.state.message.email || regex.test(this.state.message.email) === false){
-        this.setState({
-            error: "Email is not valid"
-        });
-        return false;
+  emailValidation() {
+    const regex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{3,})$/i;
+    if (
+      !this.state.message.email ||
+      regex.test(this.state.message.email) === false
+    ) {
+      this.setState({
+        error: "Email is not valid",
+      });
+      return false;
     }
     return true;
-}
-  async submitMessage (){
-   if( this.state.message.email!==""&& this.state.message.name!==""&& this.state.message.subject!==""&& this.state.message.mess!=="" && this.state.error!=="Email is not valid")
-  { const response = await postService(
-      "https://softthrive.herokuapp.com/api/contectus",
-     this.state.message
-    );
-    this.setState({ Contactvisible: true });
   }
-    else{
-      if(this.state.message.name==""){
+  async submitMessage() {
+    if (
+      this.state.message.email !== "" &&
+      this.state.message.name !== "" &&
+      this.state.message.subject !== "" &&
+      this.state.message.mess !== "" &&
+      this.state.error !== "Email is not valid"
+    ) {
+      const response = await postService(
+        "https://softthrive.herokuapp.com/api/contectus",
+        this.state.message
+      );
+      this.setState({ Contactvisible: true });
+    } else {
+      if (this.state.message.name == "") {
         this.setState({
-          requiredName: "Name is required"
-      })
+          requiredName: "Name is required",
+        });
       }
-      if(this.state.message.subject==""){
+      if (this.state.message.subject == "") {
         this.setState({
-          requiredSubject: "Subject is required"
-      });}
-      if(this.state.message.mess==""){
+          requiredSubject: "Subject is required",
+        });
+      }
+      if (this.state.message.mess == "") {
         this.setState({
-          requiredDetail: "Detail is required"
-      });}
-      if(this.state.message.email==""){
+          requiredDetail: "Detail is required",
+        });
+      }
+      if (this.state.message.email == "") {
         this.setState({
-          error: "Email is required"
-      });
+          error: "Email is required",
+        });
       }
     }
+  }
 
-    }
-    
   render() {
     return (
       <React.Fragment>
         <section className="section bg-light border-bottom">
           <Container>
             {/* render Section title */}
-            <SectionTitle
-              title="How We Work?"
-              desc=" "
-            />
+            <SectionTitle title="How We Work?" desc=" " />
 
             <Row className="align-items-center">
               <Col lg="5" md="6" className="mt-4 pt-2">
-                <Image src={Process} layout="intrinsic" width={350} height={320} className="process-image" alt="Process" />
+                <Image
+                  src={Process}
+                  layout="intrinsic"
+                  width={350}
+                  height={320}
+                  className="process-image"
+                  alt="Process"
+                />
               </Col>
 
               <Col lg="7" md="6" className="mt-4 pt-2">
@@ -127,7 +137,7 @@ class HowItWorks extends Component {
                     features={this.state.features}
                     class=""
                   />
-                  <a href="about" className="mt-3 text-primary"> 
+                  <a href="about" className="mt-3 text-primary">
                     Find Out More <i className="mdi mdi-chevron-right"></i>
                   </a>
                 </div>
@@ -160,7 +170,7 @@ class HowItWorks extends Component {
               </Col>
 
               <Col lg="5" md={{ size: 6, order: 2 }} xs={{ order: 1 }}>
-              <Card className="rounded bg-light main-contact border-0 mt-5">
+                <Card className="rounded bg-light main-contact border-0 mt-5">
                   <CardBody className="py-5">
                     <h4 className="card-title">Get In Touch!</h4>
                     <div className="custom-form mt-4">
@@ -174,7 +184,8 @@ class HowItWorks extends Component {
                           });
                         }}
                       >
-                        Contact details sent successfully. Our Team will be with you shortly.
+                        Contact details sent successfully. Our Team will be with
+                        you shortly.
                       </Alert>
                       <Form
                         method="post"
@@ -203,32 +214,36 @@ class HowItWorks extends Component {
                                 className="form-control pl-5"
                                 placeholder="Name :"
                                 required
-                                onBlur={()=>{
-                                  if(this.state.message.name==""){
+                                onBlur={() => {
+                                  if (this.state.message.name == "") {
                                     this.setState({
-                                      requiredName: "Name is required"
-                                  });}
-                                  else{
+                                      requiredName: "Name is required",
+                                    });
+                                  } else {
                                     this.setState({
-                                      requiredName: ""
-                                  })
+                                      requiredName: "",
+                                    });
                                   }
                                 }}
                                 value={this.state.message.name}
-                                onChange={(e)=>{
-                               
-                                  this.setState({message:{...this.state.message,name:e.target.value}})}
-                                }
+                                onChange={(e) => {
+                                  this.setState({
+                                    message: {
+                                      ...this.state.message,
+                                      name: e.target.value,
+                                    },
+                                  });
+                                }}
                               />
-                                <span className="text-danger">{this.state?.requiredName}</span>
+                              <span className="text-danger">
+                                {this.state?.requiredName}
+                              </span>
                             </div>
-                        
                           </Col>
                           <Col md={6} sm={12}>
                             <div className="form-group position-relative">
                               <Label>
-                                Email{" "}
-                                <span className="text-danger">*</span>
+                                Email <span className="text-danger">*</span>
                               </Label>
                               <div className="position-relative">
                                 <i>
@@ -246,21 +261,26 @@ class HowItWorks extends Component {
                                 placeholder="Email :"
                                 required
                                 value={this.state.message.email}
-                                onBlur={()=>{
-                                  if(this.emailValidation()){
+                                onBlur={() => {
+                                  if (this.emailValidation()) {
                                     this.setState({
-                                      error: ""
-                                  });}
+                                      error: "",
+                                    });
+                                  }
                                 }}
-                                onChange={(e)=>{
-                               
-                                    this.setState({message:{...this.state.message,email:e.target.value}})
+                                onChange={(e) => {
+                                  this.setState({
+                                    message: {
+                                      ...this.state.message,
+                                      email: e.target.value,
+                                    },
+                                  });
                                 }}
-                               
                               />
-                             <span className="text-danger">{this.state?.error}</span>
+                              <span className="text-danger">
+                                {this.state?.error}
+                              </span>
                             </div>
-                           
                           </Col>
                           <Col md={12}>
                             <div className="form-group position-relative">
@@ -277,24 +297,33 @@ class HowItWorks extends Component {
                                 name="subject"
                                 id="subject"
                                 type="text"
-                                onBlur={()=>{
-                                  if(this.state.message.subject==""){
+                                onBlur={() => {
+                                  if (this.state.message.subject == "") {
                                     this.setState({
-                                      requiredSubject: "Subject is required"
-                                  });}
-                                  else{
+                                      requiredSubject: "Subject is required",
+                                    });
+                                  } else {
                                     this.setState({
-                                      requiredSubject: ""
-                                  })
+                                      requiredSubject: "",
+                                    });
                                   }
                                 }}
                                 value={this.state.message.subject}
                                 className="form-control pl-5"
                                 placeholder="Subject"
                                 required
-                                onChange={(e)=>this.setState({message:{...this.state.message,subject:e.target.value}})}
+                                onChange={(e) =>
+                                  this.setState({
+                                    message: {
+                                      ...this.state.message,
+                                      subject: e.target.value,
+                                    },
+                                  })
+                                }
                               />
-                                <span className="text-danger">{this.state?.requiredSubject}</span>
+                              <span className="text-danger">
+                                {this.state?.requiredSubject}
+                              </span>
                             </div>
                           </Col>
                           <Col md={12}>
@@ -315,20 +344,29 @@ class HowItWorks extends Component {
                                 value={this.state.message.mess}
                                 className="form-control pl-5"
                                 placeholder="Your Message :"
-                                onBlur={()=>{
-                                  if(this.state.message.mess==""){
+                                onBlur={() => {
+                                  if (this.state.message.mess == "") {
                                     this.setState({
-                                      requiredDetail: "Detail is required"
-                                  });}
-                                  else{
+                                      requiredDetail: "Detail is required",
+                                    });
+                                  } else {
                                     this.setState({
-                                      requiredDetail: ""
-                                  })
+                                      requiredDetail: "",
+                                    });
                                   }
                                 }}
-                                onChange={(e)=>this.setState({message:{...this.state.message,mess:e.target.value}})}
+                                onChange={(e) =>
+                                  this.setState({
+                                    message: {
+                                      ...this.state.message,
+                                      mess: e.target.value,
+                                    },
+                                  })
+                                }
                               ></textarea>
-                                <span className="text-danger">{this.state?.requiredDetail}</span>
+                              <span className="text-danger">
+                                {this.state?.requiredDetail}
+                              </span>
                             </div>
                           </Col>
                         </Row>
@@ -341,7 +379,9 @@ class HowItWorks extends Component {
                               className="submitBnt btn btn-primary btn-block"
                               value="Send Message"
                               onClick={this.submitMessage}
-                            >Send Message</div>
+                            >
+                              Send Message
+                            </div>
                             <div id="simple-msg"></div>
                           </Col>
                         </Row>

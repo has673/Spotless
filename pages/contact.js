@@ -1,26 +1,25 @@
 // React Basic and Bootstrap
-import React, { Component } from "react";
 import Head from "next/head";
 import Link from "next/link";
+import React, { Component } from "react";
 import {
-  Container,
-  Row,
-  Col,
   Alert,
-  Form,
-  Input,
-  Label,
   Breadcrumb,
   BreadcrumbItem,
   Card,
   CardBody,
+  Col,
+  Container,
+  Form,
+  Input,
+  Label,
+  Row,
 } from "reactstrap";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
 // import images
-import contactImg from "../assets/images/contact-detail.jpg";
 
 class PageContactThree extends Component {
   constructor(props) {
