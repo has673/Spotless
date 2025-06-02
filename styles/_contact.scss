@@ -1,132 +1,118 @@
 .bg-half {
-    padding: 184px 0 90px;
-    background-size: cover;
-    align-self: center;
-    position: relative;
+  padding: 184px 0 90px;
+  background-size: cover;
+  align-self: center;
+  position: relative;
 }
 
 .background_contact {
-    background: url('../assets/images/contact-detail.jpg') center center;
+  background: url("/assets/images/contact-detail.jpg") center center;
 
-    .container {
-
-        div div {
-
-            .page-next-level {
-                
-                .title {
-                    font-size: 42px;
-                    letter-spacing: 1px;
-                    font-weight: 600;
-                }
-
-                .page-next {
-                    @media screen and (max-width: 768px) {
-                        top: 70px;
-                       
-                    }
-
-                    top: 110px;
-                    position: relative;
-                    z-index: 99;
-                    nav {
-
-                        nav {
-                            
-                            .breadcrumb {
-                                letter-spacing: 0.5px;
-                                padding: 8px 24px;
-                                display: block;
-                                display: flex;
-
-                                .breadcrumb .breadcrumb-item {
-                                    text-transform: uppercase;
-                                    font-size: 14px;
-                                    font-weight: 700;
-                                    padding-left: 0;
-                                    display: inline-block;
-                                }
-
-                                .breadcrumb .breadcrumb-item:before {
-                                    content: "";
-                                }
-                            }
-
-                            .shadow {
-                                box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
-                            }
-                        }
-                    }
-                }
-
-            }
+  .container {
+    div div {
+      .page-next-level {
+        .title {
+          font-size: 42px;
+          letter-spacing: 1px;
+          font-weight: 600;
         }
+
+        .page-next {
+          @media screen and (max-width: 768px) {
+            top: 70px;
+          }
+
+          top: 110px;
+          position: relative;
+          z-index: 99;
+          nav {
+            nav {
+              .breadcrumb {
+                letter-spacing: 0.5px;
+                padding: 8px 24px;
+                display: block;
+                display: flex;
+
+                .breadcrumb .breadcrumb-item {
+                  text-transform: uppercase;
+                  font-size: 14px;
+                  font-weight: 700;
+                  padding-left: 0;
+                  display: inline-block;
+                }
+
+                .breadcrumb .breadcrumb-item:before {
+                  content: "";
+                }
+              }
+
+              .shadow {
+                box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
+              }
+            }
+          }
+        }
+      }
     }
+  }
 }
 .introduction {
-    margin-top: 100px;
+  margin-top: 100px;
 
-    .container {
-        
-        div {
+  .container {
+    div {
+      h1 {
+        font-size: 35px !important;
+        font-weight: 600;
 
-            h1 {
-                font-size: 35px !important;
-                font-weight: 600;
-
-                span {
-                    color: #2a9df4;
-                }
-            }
+        span {
+          color: #2a9df4;
         }
+      }
     }
+  }
 }
 
 .section {
-    padding: 100px 0;
-    position: relative;
+  padding: 100px 0;
+  position: relative;
 
-    .container {
-        .row div shadow {
+  .container {
+    .row div shadow {
+      box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      .card-body {
+        padding: 1.5rem;
 
-            box-shadow: 0 0 3px rgb(60 72 88 / 15%) !important;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            min-width: 0;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-            .card-body {
-                padding: 1.5rem;
-
-                p {
-                    font-family: 'Nunito';
-                }
-
-                .custom-form {
-                    
-                }
-
-                #message {
-
-                }
-
-                form {
-                    
-                    div {
-                        display: -webkit-box;
-                    }
-                }
-            }
-        }
-    }
-
-    .container {
-        div div .feature-clean {
-            // box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-            padding: 20px 0;
+        p {
+          font-family: "Nunito";
         }
 
+        .custom-form {
+        }
+
+        #message {
+        }
+
+        form {
+          div {
+            display: -webkit-box;
+          }
+        }
+      }
     }
+  }
+
+  .container {
+    div div .feature-clean {
+      // box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+      padding: 20px 0;
+    }
+  }
 }
