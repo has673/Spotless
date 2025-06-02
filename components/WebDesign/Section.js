@@ -1,15 +1,6 @@
-import React, { Component } from "react";
 import Image from "next/image";
-import { Container, Row, Col, Alert, Badge } from "reactstrap";
-
-// Modal Video
-import ModalVideo from "react-modal-video";
-
-//Import Images
-import bg from "../../assets/images/digital/home-bg.png";
-import webdesign from "../../assets/newimages/webdesign.png";
-
-import logo_dark from "../../assets/images/logo-dark.png";
+import React, { Component } from "react";
+import { Alert, Col, Container, Row } from "reactstrap";
 import Typist from "react-typist";
 import Partners from "./Partners1";
 
@@ -31,7 +22,9 @@ class Section extends Component {
       <React.Fragment>
         <section
           className="mt-100 d-table w-100"
-          style={{ background: `url(${bg}) center center` }}
+          style={{
+            background: `url(${"/assets/images/digital/home-bg.png"}) center center`,
+          }}
           id="home"
         >
           <Container>
@@ -97,7 +90,7 @@ class Section extends Component {
 
               <Col lg={6} md={6} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <Image
-                  src={webdesign}
+                  src="/assets/newimages/webdesign.png"
                   className="img-fluid"
                   layout="intrinsic"
                   width={540}

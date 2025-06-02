@@ -9,11 +9,6 @@ import Typist from "react-typist";
 import { Col, Container, Row } from "reactstrap";
 
 //Import Images
-import logo from "../../assets/images/newlogo.png";
-
-import bg_slider_1 from "../../assets/newimages/bg-slider-1.png";
-import bg_slider_2 from "../../assets/newimages/bg-slider-2.png";
-import bg_slider_3 from "../../assets/newimages/bg-slider-3.png";
 
 import * as $ from "jquery";
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Image from "next/link"
+import Image from "next/link";
 import {
   Container,
   Row,
@@ -11,11 +11,6 @@ import {
   TabPane,
 } from "reactstrap";
 import classnames from "classnames";
-
-//Import Images
-import digital1 from "../../assets/images/digital/1.png";
-import digital2 from "../../assets/images/digital/2.png";
-import digital3 from "../../assets/images/digital/3.png";
 
 class Services extends Component {
   constructor(props) {
@@ -131,7 +126,7 @@ class Services extends Component {
                 >
                   <TabPane tabId="1">
                     <Image
-                      src={digital1}
+                      src="/assets/images/digital/1.png"
                       className="img-fluid mx-auto d-block"
                       layout="intrinsic"
                       alt="digital"
@@ -140,7 +135,7 @@ class Services extends Component {
 
                   <TabPane tabId="2">
                     <Image
-                      src={digital2}
+                      src="/assets/images/digital/2.png"
                       className="img-fluid mx-auto d-block"
                       layout="intrinsic"
                       alt="digital"
@@ -149,7 +144,7 @@ class Services extends Component {
 
                   <TabPane tabId="3">
                     <Image
-                      src={digital3}
+                      src="/assets/images/digital/3.png"
                       className="img-fluid mx-auto d-block"
                       layout="intrinsic"
                       alt="digital"

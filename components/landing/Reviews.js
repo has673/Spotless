@@ -1,33 +1,10 @@
 // React Basic and Bootstrap
-import React, { Component } from "react";
-import Link from "next/link";
 import Image from "next/image";
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Alert,
-  FormGroup,
-  Input,
-  InputGroup,
-  InputGroupAddon,
-  Button,
-  Card,
-  CardBody,
-} from "reactstrap";
+import React, { Component } from "react";
+import { Card, CardBody, Col, Container, Row } from "reactstrap";
 
 //Import Components
 import SectionTitle from "./SectionTitle";
-
-//Import Images
-import client2 from "../../assets/images/client/client1.png";
-import client1 from "../../assets/images/client/client2.jpeg";
-import client3 from "../../assets/images/client/client3.jpeg";
-import client4 from "../../assets/images/client/client4.jpeg";
-import client5 from "../../assets/images/client/client5.jpeg";
-import client6 from "../../assets/images/client/client6.jpeg";
-import analyzeReport4 from "../../assets/images/illustrator/analyze_report_4.svg";
 
 class Reviews extends Component {
   constructor(props) {
@@ -36,37 +13,37 @@ class Reviews extends Component {
       clients: [
         {
           id: 1,
-          image: client1,
+          image: "/assets/images/client/client1.png",
           name: "NESCO - United States",
           desc: "I had no idea where to start with my website but they were patient and walked me through the whole process. The results are amazing.",
         },
         {
           id: 2,
-          image: client2,
+          image: "/assets/images/client/client2.png",
           name: "BEN - United States",
           desc: "Spotless Apps is incredible and very responsive (I’m not sure when they sleep!), I Recommend them to everyone needing Website Services",
         },
         {
           id: 3,
-          image: client3,
+          image: "/assets/images/client/client3.png",
           name: "ANTONY - United States",
           desc: "These guys know their stuff. They strove for the best, and I felt like they are customer obsessed. We will definitely be back for more!",
         },
         {
           id: 4,
-          image: client4,
+          image: "/assets/images/client/client4.png",
           name: "CARLOS FILIPE - Portugal",
           desc: "The team was present all the time. Was available for all type of changes and made all the work in the available time. Totally Recommend this team.",
         },
         {
           id: 5,
-          image: client5,
+          image: "/assets/images/client/client5.png",
           name: "ITSLUCAB - Germany",
           desc: "They were perfect help for my project! They mastered all the difficulties and even managed to do extremely complex animations and functions.",
         },
         {
           id: 6,
-          image: client6,
+          image: "/assets/images/client/client6.png",
           name: "SCHULZ - Germany",
           desc: "Ordered front-end snippet. Product matched the design perfectly, then i ordered the backend and i was suprised to see their great work.",
         },

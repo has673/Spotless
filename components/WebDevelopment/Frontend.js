@@ -1,14 +1,7 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import Image from "next/image";
-//Import Icons
-import FeatherIcon from "feather-icons-react";
-import ReactIcon from "../../assets/newimages/react-icon.png";
-import AngularIcon from "../../assets/newimages/angular-icon.png";
-import FrontendIcon from "../../assets/newimages/frontend.png";
-//Import Images
-import userInterface from "../../assets/images/illustrator/user_interface.svg";
+import Link from "next/link";
+import React, { Component } from "react";
+import { Col, Container, Row } from "reactstrap";
 
 class Frontend extends Component {
   render() {
@@ -23,7 +16,7 @@ class Frontend extends Component {
                 xs={{ size: 12, order: 1 }}
               >
                 <Image
-                  src={FrontendIcon}
+                  src="/assets/newimages/frontend.png"
                   className="img-fluid mx-auto d-block"
                   alt="Frontend"
                   width="350px"
@@ -52,7 +45,7 @@ class Frontend extends Component {
                   </p>
                   <div className="my-4 d-flex">
                     <Image
-                      src={ReactIcon}
+                      src="/assets/newimages/react-icon.png"
                       width="55px"
                       height="40px"
                       layout="intrinsic"
@@ -69,7 +62,7 @@ class Frontend extends Component {
                       React Development
                     </a>
                     <Image
-                      src={AngularIcon}
+                      src="/assets/newimages/angular-icon.png"
                       width="34px"
                       height="35px"
                       layout="intrinsic"

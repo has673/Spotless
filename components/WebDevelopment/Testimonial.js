@@ -1,16 +1,10 @@
+import Image from "next/link";
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import Image from "next/link"
+import { Col, Container, Row } from "reactstrap";
 //Import Images
 import testi from "../../assets/images/digital/testi.png";
 
 //Import Client Images
-import client1 from "../../assets/images/client/01.jpg";
-import client2 from "../../assets/images/client/02.jpg";
-import client3 from "../../assets/images/client/03.jpg";
-import client4 from "../../assets/images/client/04.jpg";
-import client5 from "../../assets/images/client/05.jpg";
-import client6 from "../../assets/images/client/06.jpg";
 
 class Testimonial extends Component {
   constructor(props) {
@@ -18,52 +12,46 @@ class Testimonial extends Component {
     this.state = {
       items: [
         {
-          img: client1,
+          img: "/assets/images/client/01.jpg",
           name: "Ronald Kinsey",
           post: "User",
           rating: 5,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
         {
-          img: client2,
+          img: "/assets/images/client/02.jpg",
           name: "Raquel Service",
           post: "App User",
           rating: 4,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
         {
-          img: client3,
+          img: "/assets/images/client/03.jpg",
           name: "Leona Moore",
           post: "Client",
           rating: 4.5,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
         {
-          img: client4,
+          img: "/assets/images/client/04.jpg",
           name: "Mark Rose",
           post: "CEO",
           rating: 4.5,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
         {
-          img: client5,
+          img: "/assets/images/client/05.jpg",
           name: "Marsha Donoho",
           post: "User",
           rating: 5,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
         {
-          img: client6,
+          img: "/assets/images/client/06.jpg",
           name: "Xavier Giancola",
           post: "App User",
           rating: 5,
-          desc:
-            "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
+          desc: "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words.",
         },
       ],
       step1: true,
@@ -101,7 +89,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client1}
+                                src="/assets/images/client/01.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />
@@ -143,7 +131,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client2}
+                                src="/assets/images/client/02.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />
@@ -185,7 +173,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client4}
+                                src="/assets/images/client/04.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />
@@ -227,7 +215,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client3}
+                                src="/assets/images/client/03.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />
@@ -267,7 +255,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client5}
+                                src="/assets/images/client/05.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />
@@ -309,7 +297,7 @@ class Testimonial extends Component {
                             </p>
                             <div className="commenter mt-5">
                               <Image
-                                src={client6}
+                                src="/assets/images/client/06.jpg"
                                 className="avatar avatar-medium rounded-circle d-block mx-auto shadow-lg"
                                 alt="portfolio"
                               />

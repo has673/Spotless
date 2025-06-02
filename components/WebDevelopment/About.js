@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 //Import Icons
 import FeatherIcon from "feather-icons-react";
-//Import Images
-import app from "../../assets/images/illustrator/app.svg";
 
 class About extends Component {
   render() {
@@ -19,7 +17,7 @@ class About extends Component {
               xs={{ size: 12, order: 2 }}
               className="mt-4 mt-sm-0 pt-2 pt-sm-0"
             >
-              <Image src={app} alt="about" />
+              <Image src="/assets/images/illustrator/app.svg" alt="about" />
             </Col>
 
             <Col lg={6} md={{ size: 6, order: 2 }} xs={{ size: 12, order: 2 }}>
@@ -34,8 +32,8 @@ class About extends Component {
                   If the distribution of letters visual impact.
                 </p>
                 <i>
-                    <FeatherIcon icon="arrow-right" className="fea icon-sm" />
-                  </i>
+                  <FeatherIcon icon="arrow-right" className="fea icon-sm" />
+                </i>
                 <Link href="#" className="btn btn-primary">
                   Find More{" "}
                 </Link>

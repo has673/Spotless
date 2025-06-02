@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Image from "next/image"
+import Image from "next/image";
 import {
   Container,
   Row,
@@ -11,14 +11,7 @@ import {
   TabPane,
 } from "reactstrap";
 import classnames from "classnames";
-
-//Import Images
-import desktop from "../../assets/newimages/responsive/desktop.png";
-import tablet from "../../assets/newimages/responsive/tablet.png";
-import mobile from "../../assets/newimages/responsive/mobile.png";
-
 import SectionTitle from "../landing/SectionTitle";
-
 
 class Services extends Component {
   constructor(props) {
@@ -42,7 +35,7 @@ class Services extends Component {
     return (
       <React.Fragment>
         <Container className="mt-100 mt-4">
-        <SectionTitle
+          <SectionTitle
             title="Fully Responsive Design"
             desc="Our website designing services also offer the option of responsive design. However, we recommend responsive design because it supports mobile users, which can consist of shoppers using their tablet or smartphone to browse the web."
           />
@@ -67,7 +60,7 @@ class Services extends Component {
                     id="pills-cloud-tab"
                   >
                     <div className="p-3 text-left">
-                      <h4 className="font-weight-bold" style={{color: "fff"}}>
+                      <h4 className="font-weight-bold" style={{ color: "fff" }}>
                         Desktop View
                       </h4>
                     </div>
@@ -87,7 +80,10 @@ class Services extends Component {
                     id="pills-smart-tab"
                   >
                     <div className="p-3 text-left">
-                      <h4 style={{color: "fff"}} className="nav-title font-weight-bold">
+                      <h4
+                        style={{ color: "fff" }}
+                        className="nav-title font-weight-bold"
+                      >
                         Tablet View
                       </h4>
                     </div>
@@ -107,7 +103,12 @@ class Services extends Component {
                     id="pills-apps-tab"
                   >
                     <div className="p-3 text-left">
-                      <h4 style={{color: "fff"}} className="nav-title font-weight-bold">Mobile View</h4>
+                      <h4
+                        style={{ color: "fff" }}
+                        className="nav-title font-weight-bold"
+                      >
+                        Mobile View
+                      </h4>
                     </div>
                   </NavLink>
                 </NavItem>
@@ -123,7 +124,7 @@ class Services extends Component {
                 >
                   <TabPane tabId="1">
                     <Image
-                      src={desktop}
+                      src="/assets/newimages/responsive/desktop.png"
                       className="img-fluid mx-auto d-block"
                       alt="desktop"
                       layout="intrinsic"
@@ -134,7 +135,7 @@ class Services extends Component {
 
                   <TabPane tabId="2">
                     <Image
-                      src={tablet}
+                      src="/assets/newimages/responsive/tablet.png"
                       className="img-fluid mx-auto d-block"
                       alt="tablet"
                       layout="intrinsic"
@@ -145,7 +146,7 @@ class Services extends Component {
 
                   <TabPane tabId="3">
                     <Image
-                      src={mobile}
+                      src="/assets/newimages/responsive/mobile.png"
                       className="img-fluid mx-auto d-block"
                       alt="mobile"
                       layout="intrinsic"

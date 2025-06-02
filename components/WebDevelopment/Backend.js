@@ -1,15 +1,7 @@
-import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
-import Link from "next/link";
 import Image from "next/image";
-//Import Icons
-import FeatherIcon from "feather-icons-react";
-import Django from "../../assets/newimages/django.png";
-import Node from "../../assets/newimages/Node.js_logo.png";
-import BackendIcon from "../../assets/newimages/backend.png";
-
-//Import Images
-import userInterface from "../../assets/images/illustrator/user_interface.svg";
+import Link from "next/link";
+import React, { Component } from "react";
+import { Col, Container, Row } from "reactstrap";
 
 class Backend extends Component {
   render() {
@@ -25,7 +17,7 @@ class Backend extends Component {
                 className="d-flex"
               >
                 <Image
-                  src={BackendIcon}
+                  src="/assets/newimages/backend.png"
                   className="img-fluid mx-auto d-block"
                   alt="Backend"
                   style={{ maxWidth: "350px" }}

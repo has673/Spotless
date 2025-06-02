@@ -19,9 +19,6 @@ import { postService } from "../services";
 import SectionTitle from "./SectionTitle";
 import SectionTitleLeft from "./SectionTitleLeft";
 
-// Import Images
-import Process from "../../assets/newimages/1.png";
-
 class HowItWorks extends Component {
   constructor(props) {
     super(props);
@@ -120,7 +117,7 @@ class HowItWorks extends Component {
             <Row className="align-items-center">
               <Col lg="5" md="6" className="mt-4 pt-2">
                 <Image
-                  src={Process}
+                  src="/assets/newimages/1.png"
                   layout="intrinsic"
                   width={350}
                   height={320}

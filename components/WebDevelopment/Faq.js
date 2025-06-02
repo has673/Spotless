@@ -1,28 +1,24 @@
 // React Basic and Bootstrap
+import FeatherIcon from "feather-icons-react";
+import Link from "next/link";
 import React, { Component } from "react";
 import {
-  Container,
-  Row,
-  Col,
   Alert,
-  Form,
-  FormGroup,
-  Input,
-  Button,
-  Label,
   Card,
   CardBody,
+  Col,
+  Container,
+  Form,
+  Input,
+  Label,
+  Row,
 } from "reactstrap";
-import Link from "next/link";
-import FeatherIcon from "feather-icons-react";
 
 //Import Components
 import SectionTitle from "../landing/SectionTitle";
 import SectionTitleLeft from "../landing/SectionTitleLeft";
 
 // Import Images
-import Process from "../../assets/newimages/1.png";
-import mobileNotificationSVG from "../../assets/images/illustrator/Mobile_notification_SVG.svg";
 
 class HowItWorks extends Component {
   constructor(props) {

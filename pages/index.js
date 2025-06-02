@@ -1,22 +1,15 @@
 //next
 import dynamic from "next/dynamic";
 // React basic and bootstrap
-import React, { Component, Suspense, useEffect } from "react";
 import Head from "next/head";
+import React, { Suspense, useEffect } from "react";
 // Scroll up button
 import ScrollUpButton from "react-scroll-up-button";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
 
-import { Row } from "reactstrap";
-
 // Import sub components
-
-import Asset190 from "../assets/images/illustrator/Asset190.svg";
-import Asset189 from "../assets/images/illustrator/Asset189.svg";
-import Asset192 from "../assets/images/illustrator/Asset192.svg";
-import Asset187 from "../assets/images/illustrator/Asset187.svg";
 
 const Home = dynamic(() => import("../components/landing/Home"), {
   ssr: false,
