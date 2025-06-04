@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+  .layers-dv {
+    display: none !important;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 40px 0 20px 0;
+  }
+
+  .footer .logo-footer img {
+    height: 40px;
+    width: auto;
+  }
+
+  [name="footercolumn"] {
+    margin-top: 30px !important;
+    text-align: center !important;
+  }
+
+  .footer .social-icon li {
+    margin: 5px;
+  }
+
+  .footer form .form-control {
+    font-size: 14px;
+    height: 38px;
+  }
+
+  .footer form .foot-subscribe i svg {
+    top: 10px;
+    left: 15px;
+    width: 18px;
+    height: 18px;
+  }
+
+  #submitsubscribefooter {
+    font-size: 14px;
+    padding: 6px 16px;
+    margin-top: 10px;
+  }
+}

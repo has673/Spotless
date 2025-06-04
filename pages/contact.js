@@ -76,6 +76,7 @@ class PageContactThree extends Component {
       <React.Fragment>
         <Head>
           <title>Contact us | Spotless Apps</title>
+          <link rel="icon" href="/newlogo.png" sizes="13" />
           <meta
             name="description"
             content="Got a proposal to discuss? Our customer sales service is available 24/7. Contact us by filling the form"

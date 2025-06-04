@@ -18,6 +18,8 @@ class Backend extends Component {
               >
                 <Image
                   src="/assets/newimages/backend.png"
+                  width={100}
+                  height={100}
                   className="img-fluid mx-auto d-block"
                   alt="Backend"
                   style={{ maxWidth: "350px" }}

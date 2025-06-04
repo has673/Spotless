@@ -176,10 +176,10 @@ export default class PageAboutusTwo extends Component {
 
     if (top > 80) {
       document.getElementById("topnav").classList.add("nav-sticky");
-      brandLogo.src = "/assets/images/logo-dark.png"; // ✅ from public folder
+      brandLogo.src = "/newlogo.png"; // ✅ from public folder
     } else {
       document.getElementById("topnav").classList.remove("nav-sticky");
-      brandLogo.src = "/assets/images/logo-light.png";
+      brandLogo.src = "/newlogo.png";
     }
   };
 
@@ -187,6 +187,7 @@ export default class PageAboutusTwo extends Component {
     return (
       <React.Fragment>
         <Head>
+          <link rel="icon" href="/newlogo.png" sizes="13" />
           <title>About | Spotless Apps</title>
           <meta
             name="description"

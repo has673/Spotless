@@ -41,6 +41,7 @@ class WebDevelopment extends Component {
   render() {
     return (
       <React.Fragment>
+        <link rel="icon" href="/newlogo.png" sizes="13" />
         <Head>Website Development | Spotless Apps</Head>
 
         <Section />

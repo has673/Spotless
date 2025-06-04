@@ -112,7 +112,7 @@ class Home extends Component {
                         get started right now!{" "}
                       </p>
 
-                      <div className="mt-4 pt-2">
+                      <div className="mt-4 pt-2 buttons">
                         <a
                           href="contact"
                           className="btn btn-primary rounded mouse-down mr-2 mb-2 px-4 py-2"
