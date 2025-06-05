@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Link from "next/link";
-import Image from "next/image"
+import Image from "next/image";
 import { Col, Card, CardBody } from "reactstrap";
 
 //Import Icons
@@ -20,7 +20,6 @@ class TeamBox extends Component {
               }
               name="team"
               id="teambox"
-              
             >
               <CardBody
                 className={this.props.isTransparent === true ? "p-0" : ""}
@@ -57,7 +56,11 @@ class TeamBox extends Component {
                   }
                 >
                   <h5 className="mb-0">
-                    <a href={candidate.link} className="name text-dark" style={{color:'#000'}}>
+                    <a
+                      href={candidate.link}
+                      className="name text-dark"
+                      style={{ color: "#000" }}
+                    >
                       {candidate.name}
                     </a>
                   </h5>

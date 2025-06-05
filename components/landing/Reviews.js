@@ -19,19 +19,19 @@ class Reviews extends Component {
         },
         {
           id: 2,
-          image: "/assets/images/client/client2.png",
+          image: "/assets/images/client/client2.jpeg",
           name: "BEN - United States",
           desc: "Spotless Apps is incredible and very responsive (I’m not sure when they sleep!), I Recommend them to everyone needing Website Services",
         },
         {
           id: 3,
-          image: "/assets/images/client/client3.png",
+          image: "/assets/images/client/client3.jpeg",
           name: "ANTONY - United States",
           desc: "These guys know their stuff. They strove for the best, and I felt like they are customer obsessed. We will definitely be back for more!",
         },
         {
           id: 4,
-          image: "/assets/images/client/client4.png",
+          image: "/assets/images/client/client4.jpeg",
           name: "CARLOS FILIPE - Portugal",
           desc: "The team was present all the time. Was available for all type of changes and made all the work in the available time. Totally Recommend this team.",
         },
@@ -43,7 +43,7 @@ class Reviews extends Component {
         },
         {
           id: 6,
-          image: "/assets/images/client/client6.png",
+          image: "/assets/images/client/client6.jpeg",
           name: "SCHULZ - Germany",
           desc: "Ordered front-end snippet. Product matched the design perfectly, then i ordered the backend and i was suprised to see their great work.",
         },

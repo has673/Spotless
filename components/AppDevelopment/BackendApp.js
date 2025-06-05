@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { Component } from "react";
 import { Col, Container, Row } from "reactstrap";
 
-class Backend extends Component {
+class BackendApp extends Component {
   render() {
     return (
       <React.Fragment>
@@ -17,7 +17,7 @@ class Backend extends Component {
                 className="d-flex"
               >
                 <Image
-                  src="/assets/newimages/backend.png"
+                  src="/assets/newimages/backendApp.png"
                   width="350px"
                   height="335px"
                   className="img-fluid mx-auto d-block"
@@ -35,11 +35,12 @@ class Backend extends Component {
                 <div className="section-title">
                   <h4 className="title mb-4">Backend Development</h4>
                   <p className="text-muted para-desc mb-0">
-                    Rock-solid, reliable backend development{" "}
+                    Robust, scalable, and secure backends power successful apps.{" "}
                     <span className="text-primary font-weight-bold">
                       Spotless Apps
                     </span>{" "}
-                    ensures your business logic works as it should.
+                    delivers high-quality server-side logic tailored for mobile
+                    applications.
                   </p>
                   <div className="my-4">
                     {/* <Image src={Django} width="50px" height="30px" layout="intrinsic" /> */}
@@ -64,7 +65,7 @@ class Backend extends Component {
                     <div className="pt-4 d-flex align-items-center border-top">
                       <div className="content">
                         <h6 className="mb-0">
-                          Let's Build a great Backend for your project
+                          Let's build a powerful backend for your next app
                         </h6>
                         <i className="mdi mdi-arrow-right"></i>
                         <Link href="contact" className="text-primary">
@@ -83,4 +84,4 @@ class Backend extends Component {
   }
 }
 
-export default Backend;
+export default BackendApp;

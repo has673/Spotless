@@ -131,7 +131,64 @@ export default class PageAboutusTwo extends Component {
       candidates: [
         {
           id: 1,
-          image: "/assets/images/client/cheifmarketing.jpeg",
+          image: "/assets/images/client/Wmoiz.jpg",
+          name: " Moiz Umer",
+          designation: "Chief Executive Officer",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "https://www.facebook.com/waiz.shahid/" },
+            {
+              icon: "linkedin",
+              link: "https://linkedin.com/in/waiz-shahid-67476a121",
+            },
+            { icon: "github", link: "https://github.com/waizshahid" },
+            {
+              icon: "instagram",
+              link: "https://www.instagram.com/waiz.shahid/",
+            },
+          ],
+        },
+        {
+          id: 2,
+          image: "/assets/images/client/waiz.png",
+          name: "Waiz Shahid",
+          designation: "Chief Technical Officer",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "https://www.facebook.com/waiz.shahid/" },
+            {
+              icon: "linkedin",
+              link: "https://linkedin.com/in/waiz-shahid-67476a121",
+            },
+            { icon: "github", link: "https://github.com/waizshahid" },
+            {
+              icon: "instagram",
+              link: "https://www.instagram.com/waiz.shahid/",
+            },
+          ],
+        },
+        {
+          id: 3,
+          image: "/assets/images/client/harisarif.jpeg",
+          name: "Haris Arif",
+          designation: "Chief Operating Officer",
+          link: "",
+          socialIds: [
+            { icon: "facebook", link: "https://www.facebook.com/waiz.shahid/" },
+            {
+              icon: "linkedin",
+              link: "https://linkedin.com/in/waiz-shahid-67476a121",
+            },
+            { icon: "github", link: "https://github.com/waizshahid" },
+            {
+              icon: "instagram",
+              link: "https://www.instagram.com/waiz.shahid/",
+            },
+          ],
+        },
+        {
+          id: 4,
+          image: "/assets/images/client/cheifmarketing.jpg",
           name: "Philipp Tschochohei",
           designation: "Chief Marketing Officer",
           link: "",
@@ -254,6 +311,7 @@ export default class PageAboutusTwo extends Component {
 
               <Col md={6} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div className="ml-lg-4">
+                  {" "}
                   <div className="d-flex mb-4">
                     <span className="text-primary h1 mb-0">
                       <span className="counter-value display-1 font-weight-bold">

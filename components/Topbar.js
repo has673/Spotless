@@ -20,6 +20,7 @@ class Topbar extends Component {
           child: [
             { title: "UI UX Design", link: "/web-design" },
             { title: "Web Development", link: "/web-development" },
+            { title: "App Development", link: "/app-development" },
           ],
         },
         { id: 4, title: "About us", link: "/about" },

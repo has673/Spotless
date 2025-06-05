@@ -346,16 +346,9 @@ class PageContactThree extends Component {
                       onClick={this.callNumber}
                       className="text-primary"
                     >
-                      +92 311 4388760
+                      +92 332 5520842
                     </Link>
                     <br />
-                    <Link
-                      href="#"
-                      onClick={this.callNumber}
-                      className="text-primary"
-                    >
-                      +92 315 4388760
-                    </Link>
                   </div>
                 </Card>
               </Col>
@@ -375,16 +368,9 @@ class PageContactThree extends Component {
                       onClick={this.sendMail}
                       className="text-primary"
                     >
-                      sales@softthrive.com
+                      contact@spotlessapps.com
                     </Link>
                     <br />
-                    <Link
-                      href="#"
-                      onClick={this.sendMail}
-                      className="text-primary"
-                    >
-                      career@softthrive.com
-                    </Link>
                   </div>
                 </Card>
               </Col>
