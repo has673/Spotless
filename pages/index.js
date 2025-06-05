@@ -8,6 +8,7 @@ import ScrollUpButton from "react-scroll-up-button";
 
 //Import Icons
 import FeatherIcon from "feather-icons-react";
+import AboutHome from "../components/landing/AboutHome";
 
 // Import sub components
 
@@ -100,6 +101,9 @@ const IndexRoot = () => {
         {/* Reviews */}
         <section className="review-section">
           <Reviews />
+        </section>
+        <section>
+          <AboutHome />
         </section>
         {/* Contact */}
         <section className="contact-section">

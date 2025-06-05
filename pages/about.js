@@ -311,18 +311,49 @@ export default class PageAboutusTwo extends Component {
 
               <Col md={6} className="mt-4 pt-2 mt-sm-0 pt-sm-0">
                 <div className="ml-lg-4">
-                  {" "}
-                  <div className="d-flex mb-4">
-                    <span className="text-primary h1 mb-0">
-                      <span className="counter-value display-1 font-weight-bold">
-                        <CountUp start={0} end={5} duration={5} />
+                  {/* === Counters Row === */}
+                  <div className="d-flex flex-wrap gap-4 mb-4">
+                    {/* Years Experience */}
+                    <div className="d-flex align-items-center">
+                      <span className="text-primary h1 mb-0">
+                        <span className="counter-value display-4 font-weight-bold">
+                          <CountUp start={0} end={5} duration={3} />
+                        </span>
+                        +
                       </span>
-                      +
-                    </span>
-                    <span className="h6 align-self-end ml-2">
-                      Years <br /> Experience
-                    </span>
+                      <span className="h6 align-self-end ml-2">
+                        Years <br /> Experience
+                      </span>
+                    </div>
+
+                    {/* Projects Completed */}
+                    <div className="d-flex align-items-center">
+                      <span className="text-primary h1 mb-0">
+                        <span className="counter-value display-4 font-weight-bold">
+                          <CountUp start={15} end={40} duration={3} />
+                        </span>
+                        +
+                      </span>
+                      <span className="h6 align-self-end ml-2">
+                        Projects <br /> Completed
+                      </span>
+                    </div>
+
+                    {/* Happy Clients */}
+                    <div className="d-flex align-items-center">
+                      <span className="text-primary h1 mb-0">
+                        <span className="counter-value display-4 font-weight-bold">
+                          <CountUp start={10} end={30} duration={3} />
+                        </span>
+                        +
+                      </span>
+                      <span className="h6 align-self-end ml-2">
+                        Happy <br /> Clients
+                      </span>
+                    </div>
                   </div>
+
+                  {/* === Who We Are Section === */}
                   <div className="section-title">
                     <h4 className="title mb-4">Who are we?</h4>
                     <p className="text-muted">
@@ -330,12 +361,12 @@ export default class PageAboutusTwo extends Component {
                       <span className="text-primary font-weight-bold">
                         Spotless Apps
                       </span>
-                      , We make IT happen. We are a team of 25+ expirenced
-                      designers, devlopers and project managers Who can provide
+                      , We make IT happen. We are a team of 25+ experienced
+                      designers, developers and project managers who can provide
                       everything you need to create a modern Website, Web App,
-                      Mobile App and more. We use the Latest Tech-Stack like
-                      MERN (React.js {" & "} Node.js), React-Native and Flutter
-                      to create our Apps. Share your idea with us and let's get
+                      Mobile App and more. We use the latest tech stack like
+                      MERN (React.js & Node.js), React Native and Flutter to
+                      create our apps. Share your idea with us and let's get
                       started right now!
                     </p>
                     <a href="/contact" className="btn btn-primary mt-3">

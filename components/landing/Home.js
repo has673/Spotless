@@ -4,7 +4,6 @@ import Image from "next/image";
 // React basic and bootstrap
 import { Component } from "react";
 import Typist from "react-typist";
-
 // Import  Images
 import { Col, Container, Row } from "reactstrap";
 
